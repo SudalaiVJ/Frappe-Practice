@@ -24,7 +24,7 @@ jobs:
 #          docker-compose push
       
       - name: Deploy Docker Compose
-        uses: docker/compose-action@v2
+        uses: SudalaiVJ/Frappe-Practice
         with:
           compose-file: pwd.yml
           project-name: frappe-erpnext
