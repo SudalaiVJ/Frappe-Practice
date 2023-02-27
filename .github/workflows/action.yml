@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: SudalaiVJ/Frappe-Practice
+
       - name: Login to Docker Hub
         uses: SudalaiVJ/Frappe-Practice
         with:
