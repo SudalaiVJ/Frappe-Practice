@@ -15,7 +15,7 @@ jobs:
     - name: Connect to localhost
       uses: appleboy/ssh-action@master
       with:
-        host: decoders-ThinkPad-T470-W10DG
+        host: localhost
         username: decoders
         password: ${{ secrets.LOCAL_PASSWORD }}
         port: 22
