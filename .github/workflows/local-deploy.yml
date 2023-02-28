@@ -15,11 +15,11 @@ jobs:
     - name: Connect to localhost
       uses: appleboy/ssh-action@master
       with:
-        host: localhost
-        username: decoders
+        host: 13.233.109.71
+        username: ubuntu
         password: ${{ secrets.LOCAL_PASSWORD }}
         port: 22
 
     - name: Start new container
-      run: ssh decoders@decoders-ThinkPad-T470-W10DG docker-compose up -d
+      run: ssh ubuntu@13.233.109.71 docker-compose up -d
       
